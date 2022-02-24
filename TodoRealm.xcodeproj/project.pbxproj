@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		F846060827C79A280062F5B8 /* TodoRealmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846060727C79A280062F5B8 /* TodoRealmApp.swift */; };
-		F846060A27C79A280062F5B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846060927C79A280062F5B8 /* ContentView.swift */; };
 		F846060C27C79A290062F5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F846060B27C79A290062F5B8 /* Assets.xcassets */; };
 		F846060F27C79A290062F5B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F846060E27C79A290062F5B8 /* Preview Assets.xcassets */; };
+		F846061927C79AB30062F5B8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846061827C79AB30062F5B8 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F846060427C79A280062F5B8 /* TodoRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F846060727C79A280062F5B8 /* TodoRealmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRealmApp.swift; sourceTree = "<group>"; };
-		F846060927C79A280062F5B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F846060B27C79A290062F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F846060E27C79A290062F5B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F846061827C79AB30062F5B8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				F846060727C79A280062F5B8 /* TodoRealmApp.swift */,
-				F846060927C79A280062F5B8 /* ContentView.swift */,
+				F846061727C79AA50062F5B8 /* Views */,
+				F846061627C79A9D0062F5B8 /* ViewModels */,
+				F846061527C79A940062F5B8 /* Models */,
 				F846060B27C79A290062F5B8 /* Assets.xcassets */,
 				F846060D27C79A290062F5B8 /* Preview Content */,
 			);
@@ -65,6 +67,28 @@
 				F846060E27C79A290062F5B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F846061527C79A940062F5B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F846061627C79A9D0062F5B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F846061727C79AA50062F5B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F846061827C79AB30062F5B8 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F846060A27C79A280062F5B8 /* ContentView.swift in Sources */,
+				F846061927C79AB30062F5B8 /* HomeView.swift in Sources */,
 				F846060827C79A280062F5B8 /* TodoRealmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
