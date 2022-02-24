@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var showAddTaskView = false
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack(alignment: .bottomTrailing) {
+            VStack {
+                TasksView()
+                Button("Add Task") {
+                    showAddTaskView.toggle()
+                }
+                .buttonStyle(.bordered)
+            }
+        }
+        .sheet(isPresented: $showAddTaskView) {
+            AddTaskView()
+        }
     }
 }
 

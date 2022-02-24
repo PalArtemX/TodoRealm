@@ -11,6 +11,9 @@
 		F846060C27C79A290062F5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F846060B27C79A290062F5B8 /* Assets.xcassets */; };
 		F846060F27C79A290062F5B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F846060E27C79A290062F5B8 /* Preview Assets.xcassets */; };
 		F846061927C79AB30062F5B8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846061827C79AB30062F5B8 /* HomeView.swift */; };
+		F846061C27C79B0D0062F5B8 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846061B27C79B0D0062F5B8 /* TasksView.swift */; };
+		F846061E27C79B820062F5B8 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846061D27C79B820062F5B8 /* TaskRowView.swift */; };
+		F846062027C79C660062F5B8 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846061F27C79C660062F5B8 /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		F846060B27C79A290062F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F846060E27C79A290062F5B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F846061827C79AB30062F5B8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F846061B27C79B0D0062F5B8 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		F846061D27C79B820062F5B8 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		F846061F27C79C660062F5B8 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,9 @@
 			isa = PBXGroup;
 			children = (
 				F846061827C79AB30062F5B8 /* HomeView.swift */,
+				F846061B27C79B0D0062F5B8 /* TasksView.swift */,
+				F846061D27C79B820062F5B8 /* TaskRowView.swift */,
+				F846061F27C79C660062F5B8 /* AddTaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F846061927C79AB30062F5B8 /* HomeView.swift in Sources */,
+				F846062027C79C660062F5B8 /* AddTaskView.swift in Sources */,
+				F846061C27C79B0D0062F5B8 /* TasksView.swift in Sources */,
+				F846061E27C79B820062F5B8 /* TaskRowView.swift in Sources */,
 				F846060827C79A280062F5B8 /* TodoRealmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
