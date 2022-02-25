@@ -23,7 +23,7 @@ struct AddTaskView: View {
                 .padding()
             
             Button("Add Task") {
-                if !title.isEmpty {
+                if title != "" {
                     realManager.addTask(taskTitle: title)
                 }
                 dismiss()

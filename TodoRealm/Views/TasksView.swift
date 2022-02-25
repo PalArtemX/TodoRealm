@@ -17,7 +17,7 @@ struct TasksView: View {
                 .font(.headline)
             
             List {
-                ForEach(realManager.tasks, id: \.self) { task in
+                ForEach(realManager.tasks, id: \.id) { task in
                     
                     if !task.isInvalidated {
                         TaskRowView(task: task.title, completed: task.completed)
@@ -32,9 +32,6 @@ struct TasksView: View {
                                 }
                             }
                     }
-                    
-                    
-                    
                 }
             }
         }
