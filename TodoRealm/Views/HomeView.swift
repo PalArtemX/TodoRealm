@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var realmManager = RealmManager()
     @State private var showAddTaskView = false
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             VStack {
                 TasksView()
+                    .environmentObject(realmManager)
+                
                 Button("Add Task") {
                     showAddTaskView.toggle()
                 }
@@ -22,6 +25,7 @@ struct HomeView: View {
         }
         .sheet(isPresented: $showAddTaskView) {
             AddTaskView()
+                .environmentObject(realmManager)
         }
     }
 }

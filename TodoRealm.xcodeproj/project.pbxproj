@@ -67,9 +67,8 @@
 			children = (
 				F846060727C79A280062F5B8 /* TodoRealmApp.swift */,
 				F846061727C79AA50062F5B8 /* Views */,
-				F846061627C79A9D0062F5B8 /* ViewModels */,
+				F846062627C7ADDB0062F5B8 /* ViewModels */,
 				F846061527C79A940062F5B8 /* Models */,
-				F846062627C7ADDB0062F5B8 /* Managers */,
 				F846060B27C79A290062F5B8 /* Assets.xcassets */,
 				F846060D27C79A290062F5B8 /* Preview Content */,
 			);
@@ -92,13 +91,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F846061627C79A9D0062F5B8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		F846061727C79AA50062F5B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +102,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F846062627C7ADDB0062F5B8 /* Managers */ = {
+		F846062627C7ADDB0062F5B8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				F846062727C7ADF70062F5B8 /* RealmManager.swift */,
 			);
-			path = Managers;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

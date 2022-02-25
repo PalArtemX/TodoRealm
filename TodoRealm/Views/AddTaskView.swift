@@ -11,10 +11,11 @@ struct AddTaskView: View {
     
     @State private var title = ""
     @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var realManager: RealmManager
     
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            Text("Add Task")
                 .font(.title)
             
             TextField("Enter your task here", text: $title)
@@ -22,6 +23,9 @@ struct AddTaskView: View {
                 .padding()
             
             Button("Add Task") {
+                if !title.isEmpty {
+                    realManager.addTask(taskTitle: title)
+                }
                 dismiss()
             }
             .buttonStyle(.bordered)
@@ -40,5 +44,6 @@ struct AddTaskView: View {
 struct AddTaskView_Previews: PreviewProvider {
     static var previews: some View {
         AddTaskView()
+            .environmentObject(RealmManager())
     }
 }
